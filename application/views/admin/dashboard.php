@@ -28,7 +28,7 @@
                 </div>
                 <div class="card-wrap">
                   <div class="card-header">
-                    <h4>News</h4>
+                    <h4>Total Order</h4>
                   </div>
                   <div class="card-body">
                     42
@@ -43,7 +43,7 @@
                 </div>
                 <div class="card-wrap">
                   <div class="card-header">
-                    <h4>Reports</h4>
+                    <h4>Revenue</h4>
                   </div>
                   <div class="card-body">
                     1,201
