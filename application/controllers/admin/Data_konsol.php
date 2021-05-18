@@ -32,11 +32,10 @@ class Data_konsol extends CI_Controller{
             else {
                 $config ['upload_path']     = './assets/upload';
                 $config ['allowed_types']   = 'jpg|jpeg|png|tiff';
-            }
 
-            $this->load->library('upload', $config);
-            if(!$this->upload->do_upload('gambar')) {
-                echo "Gambar Gagal Diupload!";
+                $this->load->library('upload', $config);
+                if(!$this->upload->do_upload('gambar')) {
+                    echo "Gambar Gagal Diupload!";
             }
             else{
                 $gambar=$this->upload->data('file_name');
@@ -53,6 +52,7 @@ class Data_konsol extends CI_Controller{
         $this->rental_model->insert_data($data,'konsol');
         $this->session->set_flashdata('pesan','<div class="alert alert-success alert-dismissible fade show" role="alert">Data Berhasil Ditambahkan!</div>');
         redirect('admin/data_konsol');
+        }
     }
 
     public function _rules() {
