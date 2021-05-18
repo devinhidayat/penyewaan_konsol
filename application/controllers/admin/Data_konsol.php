@@ -51,7 +51,7 @@ class Data_konsol extends CI_Controller{
         );
 
         $this->rental_model->insert_data($data,'konsol');
-        $this->session->set_flashdata('pesan','Data Berhasil Ditambahkan!');
+        $this->session->set_flashdata('pesan','<div class="alert alert-success alert-dismissible fade show" role="alert">Data Berhasil Ditambahkan!</div>');
         redirect('admin/data_konsol');
     }
 
