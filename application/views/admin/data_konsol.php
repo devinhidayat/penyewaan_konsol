@@ -41,9 +41,9 @@
                                 if($k->status == "3") { echo "<span class='badge badge-success'>Selesai</span>"; }
                             ?></td>
                             <td>
-                                <a href="" class="btn btn-sm btn-success"><i class="fas fa-eye"></i></a>
-                                <a href="" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
-                                <a href="" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
+                                <a href="<?php echo base_url('index.php/admin/data_konsol/detail_konsol/').$k->id_konsol ?>" class="btn btn-sm btn-success"><i class="fas fa-eye"></i></a>
+                                <a href="<?php echo base_url('index.php/admin/data_konsol/delete_konsol/').$k->id_konsol ?>" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
+                                <a href="<?php echo base_url('index.php/admin/data_konsol/update_konsol/').$k->id_konsol ?>" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
                             </td>
                         </tr>
                 <?php endforeach; ?>
