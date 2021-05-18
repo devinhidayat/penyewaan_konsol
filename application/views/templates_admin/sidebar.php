@@ -228,11 +228,11 @@
             <a href="index.html">RC</a>
           </div>
           <ul class="sidebar-menu">
-              <li><a class="nav-link" href="<?php echo base_url('admin/dashboard.php') ?>"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a></li>
-              <li><a class="nav-link" href="<?php echo base_url('admin/data_console.php') ?>"><i class="fas fa-gamepad"></i> <span>Data Console</span></a></li>
-              <li><a class="nav-link" href="<?php echo base_url('admin/rental.php') ?>"><i class="fas fa-grip-horizontal"></i> <span>Rental</span></a></li>
-              <li><a class="nav-link" href="<?php echo base_url('admin/data_customer.php') ?>"><i class="fas fa-users"></i> <span>Data Customer</span></a></li>
-              <li><a class="nav-link" href="<?php echo base_url('admin/transaksi.php') ?>"><i class="fas fa-random"></i> <span>Transaksi</span></a></li>
+              <li><a class="nav-link" href="<?php echo base_url('index.php/admin/dashboard') ?>"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a></li>
+              <li><a class="nav-link" href="<?php echo base_url('index.php/admin/data_konsol') ?>"><i class="fas fa-gamepad"></i> <span>Data Console</span></a></li>
+              <li><a class="nav-link" href="<?php echo base_url('index.php/admin/rental') ?>"><i class="fas fa-grip-horizontal"></i> <span>Rental</span></a></li>
+              <li><a class="nav-link" href="<?php echo base_url('index.php/admin/data_customer') ?>"><i class="fas fa-users"></i> <span>Data Customer</span></a></li>
+              <li><a class="nav-link" href="<?php echo base_url('index.php/admin/transaksi') ?>"><i class="fas fa-random"></i> <span>Transaksi</span></a></li>
             </ul>
         </aside>
       </div>
