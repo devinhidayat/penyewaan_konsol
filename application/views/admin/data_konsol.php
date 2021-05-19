@@ -17,7 +17,6 @@
                     <th>Gambar</th>
                     <th>Harga</th>
                     <th>Kuantitas</th>
-                    <th>Status</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
@@ -34,12 +33,6 @@
                             </td>
                             <td><?php echo $k->harga ?></td>
                             <td><?php echo $k->kuantitas ?></td>
-                            <td><?php
-                                if($k->status == "0") { echo "<span class='badge badge-light'>Sedang Dikirim</span>"; }
-                                if($k->status == "1") { echo "<span class='badge badge-secondary'>Sudah Dikirim</span>"; }
-                                if($k->status == "2") { echo "<span class='badge badge-primary'>Siap di-Pick up</span>"; }
-                                if($k->status == "3") { echo "<span class='badge badge-success'>Selesai</span>"; }
-                            ?></td>
                             <td>
                                 <a href="<?php echo base_url('index.php/admin/data_konsol/detail_konsol/').$k->id_konsol ?>" class="btn btn-sm btn-success"><i class="fas fa-eye"></i></a>
                                 <a href="<?php echo base_url('index.php/admin/data_konsol/delete_konsol/').$k->id_konsol ?>" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>

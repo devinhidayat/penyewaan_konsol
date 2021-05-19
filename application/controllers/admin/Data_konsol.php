@@ -113,6 +113,21 @@ class Data_konsol extends CI_Controller{
         $this->form_validation->set_rules('harga','Harga','required');
         $this->form_validation->set_rules('kuantitas','Kuantitas','required');
     }
+
+    public function detail_konsol($id) {
+        $data['detail'] = $this->rental_model->ambil_id_konsol($id);
+        $this->load->view('templates_admin/header');
+        $this->load->view('templates_admin/sidebar');
+        $this->load->view('admin/detail_konsol',$data);
+        $this->load->view('templates_admin/footer');
+    }
+
+    public function delete_konsol($id) {
+        $where = array ('id_konsol' => $id);
+        $this->rental_model->delete_data($where, 'konsol');
+        $this->session->set_flashdata('pesan','<div class="alert alert-danger alert-dismissible fade show" role="alert">Data Berhasil Dihapus!</div>');
+        redirect('admin/data_konsol');
+    }
 }
 
 ?>
