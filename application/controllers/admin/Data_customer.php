@@ -44,6 +44,54 @@ class Data_customer extends CI_Controller{
         }
     }
 
+    public function update_customer($id){
+        $where = array('id_customer' => $id);
+        $data['customer'] = $this->db->query("SELECT * FROM customer WHERE id_customer = '$id'")->result();
+        $this->load->view('templates_admin/header');
+        $this->load->view('templates_admin/sidebar');
+        $this->load->view('admin/form_update_customer',$data);
+        $this->load->view('templates_admin/footer');
+    }
+
+    public function update_customer_aksi(){
+        $this->_rules();
+
+        if($this->form_validation->run() == FALSE) {
+            $this->update_customer();
+        }
+        else {
+            $id             = $this->input->post('id_customer');
+            $nama_customer  = $this->input->post('nama_customer');
+            $alamat         = $this->input->post('alamat');
+            $no_telepon     = $this->input->post('no_telepon');
+            $email          = $this->input->post('email');
+            $password       = md5($this->input->post('password'));
+
+            $data = array (
+                'nama_customer' => $nama_customer,
+                'alamat'        => $alamat,
+                'no_telepon'    => $no_telepon,
+                'email'         => $email,
+                'password'      => $password
+            );
+
+            $where = array (
+                'id_customer'   => $id
+            );
+
+            $this->rental_model->update_data('customer',$data,$where);
+            $this->session->set_flashdata('pesan','<div class="alert alert-success alert-dismissible fade show" role="alert">Data Customer Berhasil Diupdate!</div>');
+            redirect('admin/data_customer');
+        }
+    }
+
+    public function delete_customer($id){
+        $where = array ('id_customer' => $id);
+        $this->rental_model->delete_data($where, 'customer');
+        $this->session->set_flashdata('pesan','<div class="alert alert-danger alert-dismissible fade show" role="alert">Data Customer Berhasil Dihapus!</div>');
+        redirect('admin/data_customer');
+    }
+
     public function _rules(){
         $this->form_validation->set_rules('nama_customer','Nama','required');
         $this->form_validation->set_rules('alamat','Alamat','required');

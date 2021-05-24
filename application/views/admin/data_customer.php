@@ -32,8 +32,10 @@
                         <td><?php echo $c->email ?></td>
                         <td><?php echo $c->password ?></td>
                         <td>
-                            <a href="<?php echo base_url('admin/data_customer/delete_customer/').$c->id_customer ?>" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
-                            <a href="<?php echo base_url('admin/data_customer/update_customer/').$c->id_customer ?>" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
+                            <div class="row">
+                                <a href="<?php echo base_url('index.php/admin/data_customer/delete_customer/').$c->id_customer ?>" class="btn btn-sm btn-danger mr-2"><i class="fas fa-trash"></i></a>
+                                <a href="<?php echo base_url('index.php/admin/data_customer/update_customer/').$c->id_customer ?>" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
+                            </div>
                         </td>
                     </tr>
             
