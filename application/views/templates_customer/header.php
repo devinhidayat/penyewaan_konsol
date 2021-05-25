@@ -39,22 +39,14 @@
     <div class="main-top">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					
-                    
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="our-link">
                         <ul>
                             <li><a href="#"><i class="fa fa-user s_color"></i> My Account</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="login-box">
-						<select id="basic" class="selectpicker show-tick form-control" data-placeholder="Sign In">
-							<option>Register Here</option>
-							<option>Sign In</option>
-						</select>
-					</div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="text-slid-box">
                         <div id="offer-box" class="carouselTicker">
                             <ul class="offer-box">
@@ -85,6 +77,19 @@
                             </ul>
                         </div>
                     </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <div class="container our-link">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                            <div class="collapse navbar-collapse" id="navbarResponsive">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item"><a class="nav-link" href="<?php echo base_url('index.php/login') ?>">LOGIN</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="<?php echo base_url('index.php/register') ?>">REGISTER</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
