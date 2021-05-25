@@ -16,13 +16,15 @@ class Register extends CI_Controller{
             $no_telepon     = $this->input->post('no_telepon');
             $email          = $this->input->post('email');
             $password       = md5($this->input->post('password'));
+            $role_id        = '2';
 
             $data = array (
                 'nama_customer' => $nama_customer,
                 'alamat'        => $alamat,
                 'no_telepon'    => $no_telepon,
                 'email'         => $email,
-                'password'      => $password
+                'password'      => $password,
+                'role_id'       => $role_id
             );
 
             $this->rental_model->insert_data($data, 'customer');

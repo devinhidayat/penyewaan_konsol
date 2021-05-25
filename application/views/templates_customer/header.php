@@ -84,8 +84,13 @@
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                             <div class="collapse navbar-collapse" id="navbarResponsive">
                                 <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item"><a class="nav-link" href="<?php echo base_url('index.php/login') ?>">LOGIN</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="<?php echo base_url('index.php/register') ?>">REGISTER</a></li>
+                                    <?php if($this->session->userdata('nama_customer')) { ?>
+                                        <li class="nav-item"><a class="nav-link" href="">Welcome <?php echo $this->session->userdata('nama_customer') ?></a></li>
+                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('index.php/auth/logout') ?>">LOG OUT</a></li>
+                                    <?php } else { ?>
+                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('index.php/register') ?>">REGISTER</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('index.php/auth/login') ?>">LOGIN</a></li>
+                                    <?php } ?>
                                 </ul>
                             </div>
                         </div>
