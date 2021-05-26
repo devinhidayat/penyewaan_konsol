@@ -44,6 +44,8 @@
     </div>
     <!-- End Top Search -->
 
+    <?php echo $this->session->flashdata('pesan') ?>
+    
     <!-- Start Slider -->
     <div id="slides-shop" class="cover-slides">
         <ul class="slides-container">
@@ -169,7 +171,16 @@
                                     <li><a href="<?php echo base_url('index.php/customer/dashboard/detail_konsol/'.$k->id_konsol) ?>" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
                                     <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
                                 </ul>
-                                <a class="cart" href="<?php echo anchor('customer/rental/tambah_rental'.$k->id_konsol, 'Add to Cart') ?>"></a>
+                                <a class="cart"
+                                    <?php 
+                                        if($k->kuantitas > "0") {
+                                            echo anchor('customer/rental/tambah_rental/'.$k->id_konsol,'<span class="rent-btn">Add to Cart</span>');
+                                        }
+                                        else {
+                                            echo "<span class='rent-btn'>Tidak Tersedia</span>";
+                                        }
+                                    ?>>
+                                </a>
                             </div>
                         </div>
                         <div class="why-text">
