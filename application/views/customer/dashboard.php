@@ -167,7 +167,6 @@
                             <div class="mask-icon">
                                 <ul>
                                     <li><a href="<?php echo base_url('index.php/customer/dashboard/detail_konsol/'.$k->id_konsol) ?>" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
                                     <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
                                 </ul>
                                 <a class="cart" href="<?php echo anchor('customer/rental/tambah_rental'.$k->id_konsol, 'Add to Cart') ?>"></a>
@@ -175,7 +174,7 @@
                         </div>
                         <div class="why-text">
                             <h4><?php echo $k->nama ?></h4>
-                            <h5>Harga: <?php echo $k->harga ?></h5>
+                            <h5>Harga: Rp. <?php echo number_format($k->harga,0,',','.') ?></h5>
                             <h5>Kuantitas: <?php echo $k->kuantitas ?></h5>
                         </div>
                     </div>

@@ -106,7 +106,7 @@
                             </tr>
                             <tr>
                                 <th>Harga</th>
-                                    <td><?php echo $dt->harga ?></td>
+                                    <td>Rp. <?php echo number_format($dt->harga,0,',','.') ?></td>
                             </tr>
                             <tr>
                                 <th>Kuantitas</th>
