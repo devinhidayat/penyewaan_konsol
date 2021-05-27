@@ -43,7 +43,7 @@
         </div>
     </div>
     <!-- End Top Search -->
-
+    
     <?php echo $this->session->flashdata('pesan') ?>
     
     <!-- Start Slider -->

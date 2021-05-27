@@ -17,7 +17,7 @@
                     <th>Gambar</th>
                     <th>Harga</th>
                     <th>Kuantitas</th>
-                    <th>Aksi</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
