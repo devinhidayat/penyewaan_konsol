@@ -1,7 +1,7 @@
 <div class="main-content">
     <section class="section">
         <div class="section-header">
-            <h1>Data Rental</h1>
+            <h1>Data Order</h1>
         </div>
 
         <div class="table-responsive">
@@ -21,17 +21,17 @@
                 <tbody>
                     <?php 
                         $no = 1;
-                        foreach($rental as $r) : ?>
+                        foreach($order as $o) : ?>
                             <tr>
                                 <td><?php echo $no++ ?></td>
-                                <td><?php echo $r->nama_customer ?></td>
-                                <td><?php echo $r->nama ?></td>
-                                <td><?php echo date('d/m/Y', strtotime($r->tanggal_rental)); ?></td>
-                                <td><?php echo date('d/m/Y', strtotime($r->tanggal_kembali)); ?></td>
-                                <td>Rp. <?php echo number_format($r->harga,0,',','.') ?></td>
-                                <td><?php echo $r->status_rental ?></td>
+                                <td><?php echo $o->nama_customer ?></td>
+                                <td><?php echo $o->nama ?></td>
+                                <td><?php echo date('d/m/Y', strtotime($o->tanggal_rental)); ?></td>
+                                <td><?php echo date('d/m/Y', strtotime($o->tanggal_kembali)); ?></td>
+                                <td>Rp. <?php echo number_format($o->harga,0,',','.') ?></td>
+                                <td><?php echo $o->status_rental ?></td>
                                 <td>
-                                    <a href="<?php echo base_url('index.php/admin/data_rental/update_rental/').$r->id_konsol ?>" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
+                                    <a href="<?php echo base_url('index.php/admin/data_order/update_order/').$o->id_konsol ?>" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
                                 </td>
                             </tr>
                     <?php endforeach; ?>

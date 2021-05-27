@@ -4,6 +4,7 @@ class Rental extends CI_Controller{
 
     public function tambah_rental($id) {
         $data['detail'] = $this->rental_model->ambil_id_konsol($id);
+        $this->load->view('templates_customer/header');
         $this->load->view('customer/tambah_rental',$data);
         $this->load->view('templates_customer/footer');
     }

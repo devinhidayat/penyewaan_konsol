@@ -11,6 +11,7 @@ class Dashboard extends CI_Controller {
 
     public function detail_konsol($id) {
         $data['detail'] = $this->rental_model->ambil_id_konsol($id);
+        $this->load->view('templates_customer/header');
         $this->load->view('customer/detail_konsol',$data);
         $this->load->view('templates_customer/footer');
     }
