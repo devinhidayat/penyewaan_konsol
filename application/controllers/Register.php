@@ -8,7 +8,6 @@ class Register extends CI_Controller{
         if($this->form_validation->run() == FALSE) {
             $this->load->view('templates_admin/header');
             $this->load->view('register_form');
-            $this->load->view('templates_admin/footer');
         }
         else {
             $nama_customer  = $this->input->post('nama_customer');

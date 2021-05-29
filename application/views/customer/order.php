@@ -19,7 +19,14 @@
                     <td><?php echo $o->nama ?></td>
                     <td><?php echo date('d/m/Y', strtotime($o->tanggal_rental)); ?></td>
                     <td><?php echo date('d/m/Y', strtotime($o->tanggal_kembali)); ?></td>
-                    <td>Rp. <?php echo number_format($o->harga,0,',','.') ?></td>
+                    <td>Rp. 
+                        <?php 
+                            $awal = new DateTime($o->tanggal_rental);
+                            $akhir = new DateTime($o->tanggal_kembali);
+                            $diff = $akhir->diff($awal);
+                            echo number_format($o->harga*$diff->d,0,',','.');
+                        ?>
+                    </td>
                     <td><?php echo $o->status_rental ?></td>
                 </tr>
                 <?php endforeach; ?>
