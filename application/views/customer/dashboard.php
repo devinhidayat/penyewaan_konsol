@@ -94,20 +94,26 @@
                                     <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
                                 </ul>
                                 <a class="cart"
-                                    <?php 
+                                    <?php if($this->session->userdata('nama_customer')) { ?>
+                                        <?php 
                                         if($k->kuantitas > "0") {
                                             echo anchor('customer/rental/tambah_rental/'.$k->id_konsol,'<span class="rent-btn">Add to Cart</span>');
                                         }
                                         else {
                                             echo "<span class='rent-btn'>Tidak Tersedia</span>";
                                         }
-                                    ?>>
+                                        ?>>
+                                    <?php } else { ?>
+                                        <button href="<?php echo base_url('index.php/auth/login') ?>">Please Login First</button>
+                                    <?php } ?>
+                                    
                                 </a>
                             </div>
                         </div>
                         <div class="why-text">
                             <h4><?php echo $k->nama ?></h4>
-                            <h5>Harga: Rp. <?php echo number_format($k->harga,0,',','.') ?></h5>
+                            <h5>Deskripsi: <?php echo $k->deskripsi ?></h5><br>
+                            <h5>Harga: Rp. <?php echo number_format($k->harga,0,',','.') ?></h5><br>
                             <h5>Kuantitas: <?php echo $k->kuantitas ?></h5>
                         </div>
                     </div>

@@ -14,6 +14,7 @@
                     <th>No.</th>
                     <th>ID</th>
                     <th>Nama</th>
+                    <th>Deskripsi</th>
                     <th>Gambar</th>
                     <th>Harga</th>
                     <th>Kuantitas</th>
@@ -28,6 +29,7 @@
                             <td><?php echo $no++ ?></td>
                             <td><?php echo $k->id_konsol ?></td>
                             <td><?php echo $k->nama ?></td>
+                            <td><?php echo $k->deskripsi ?></td>
                             <td>
                                 <img width="100px" src="<?php echo base_url().'assets/upload/'.$k->gambar ?>">
                             </td>

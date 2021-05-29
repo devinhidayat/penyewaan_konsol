@@ -9,14 +9,17 @@
       <div class="col-lg-4 col-md-6 col-sm-6 col-12">
         <div class="card card-statistic-1">
           <div class="card-icon bg-primary">
-            <i class="far fa-user"></i>
+            <i class="fas fa-gamepad"></i>
           </div>
           <div class="card-wrap">
             <div class="card-header">
               <h4>Total Konsol</h4>
             </div>
             <div class="card-body">
-              10
+                <?php
+                  $query = $this->db->get('konsol');
+                  echo $query->num_rows();
+                ?> 
             </div>
           </div>
         </div>
@@ -31,7 +34,10 @@
               <h4>Total Order</h4>
             </div>
             <div class="card-body">
-              42
+              <?php
+                  $query = $this->db->get('rental');
+                  echo $query->num_rows();
+                ?> 
             </div>
           </div>
         </div>
@@ -39,14 +45,17 @@
       <div class="col-lg-4 col-md-6 col-sm-6 col-12">
         <div class="card card-statistic-1">
           <div class="card-icon bg-warning">
-            <i class="far fa-file"></i>
+            <i class="far fa-user"></i>
           </div>
           <div class="card-wrap">
             <div class="card-header">
-              <h4>Revenue</h4>
+              <h4>Customer</h4>
             </div>
             <div class="card-body">
-              1,201
+                <?php
+                  $query = $this->db->query('SELECT * FROM customer WHERE role_id = 2');
+                  echo $query->num_rows();
+                ?> 
             </div>
           </div>
         </div>

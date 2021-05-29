@@ -25,6 +25,7 @@ class Data_konsol extends CI_Controller{
         }
         else {
             $nama           = $this->input->post('nama');
+            $deskripsi      = $this->input->post('deskripsi');
             $harga          = $this->input->post('harga');
             $kuantitas      = $this->input->post('kuantitas');
             $gambar         = $_FILES['gambar']['name'];
@@ -44,6 +45,7 @@ class Data_konsol extends CI_Controller{
 
         $data = array(
             'nama'          => $nama,
+            'deskripsi'     => $deskripsi,
             'harga'         => $harga,
             'kuantitas'     => $kuantitas,
             'gambar'        => $gambar
@@ -74,6 +76,7 @@ class Data_konsol extends CI_Controller{
         else {
             $id             = $this->input->post('id_konsol');
             $nama           = $this->input->post('nama');
+            $deskripsi      = $this->input->post('deskripsi');
             $harga          = $this->input->post('harga');
             $kuantitas      = $this->input->post('kuantitas');
             $gambar         = $_FILES['gambar']['name'];
@@ -94,6 +97,7 @@ class Data_konsol extends CI_Controller{
 
             $data = array(
                 'nama'          => $nama,
+                'deskripsi'     => $deskripsi,
                 'harga'         => $harga,
                 'kuantitas'     => $kuantitas
             );
@@ -110,6 +114,7 @@ class Data_konsol extends CI_Controller{
 
     public function _rules() {
         $this->form_validation->set_rules('nama','Nama','required');
+        $this->form_validation->set_rules('deskripsi','Deskripsi','required');
         $this->form_validation->set_rules('harga','Harga','required');
         $this->form_validation->set_rules('kuantitas','Kuantitas','required');
     }

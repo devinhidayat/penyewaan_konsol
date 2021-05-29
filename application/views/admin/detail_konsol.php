@@ -20,6 +20,10 @@
                                 <td><?php echo $dt->nama ?></td>
                             </tr>
                             <tr>
+                                <td>Deskripsi</td>
+                                <td><?php echo $dt->deskrispi ?></td>
+                            </tr>
+                            <tr>
                                 <td>Harga</td>
                                 <td><?php echo $dt->harga ?></td>
                             </tr>
