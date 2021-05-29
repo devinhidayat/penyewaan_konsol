@@ -91,13 +91,13 @@
                             <div class="mask-icon">
                                 <ul>
                                     <li><a href="<?php echo base_url('index.php/customer/dashboard/detail_konsol/'.$k->id_konsol) ?>" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Cart"><i class="fas fa-shopping-cart"></i></a></li>
                                 </ul>
                                 <a class="cart"
                                     <?php if($this->session->userdata('nama_customer')) { ?>
                                         <?php 
                                         if($k->kuantitas > "0") {
-                                            echo anchor('customer/rental/tambah_rental/'.$k->id_konsol,'<span class="rent-btn">Add to Cart</span>');
+                                            echo anchor('customer/rental/tambah_rental/'.$k->id_konsol,'<span class="rent-btn">Rental</span>');
                                         }
                                         else {
                                             echo "<span class='rent-btn'>Tidak Tersedia</span>";
