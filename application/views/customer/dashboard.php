@@ -20,7 +20,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="m-b-20"><strong>Welcome To <br> - </strong></h1>
+                            <h1 class="m-b-20"><strong>Welcome To <br> Rentscape </strong></h1>
                         </div>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="m-b-20"><strong>Welcome To <br> - </strong></h1>
+                            <h1 class="m-b-20"><strong>Welcome To <br> Rentscape </strong></h1>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="m-b-20"><strong>Welcome To <br> - </strong></h1>
+                            <h1 class="m-b-20"><strong>Welcome To <br> Rentscape </strong></h1>
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row special-list">
+            <div class="row">
             <?php foreach($konsol as $k) : ?>
                 <div class="col-lg-4 col-md-6 special-grid">
                     <div class="products-single fix">

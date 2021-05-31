@@ -29,9 +29,9 @@
                     </td>
                     <td>
                         <select>
-                            <option></option>
+                            <option><?php echo $o->status_rental ?></option>
+                            <option <?php if($o->status_rental=="Siap di Pick-up"){echo "selected";} ?> value="Siap di Pick-up">Siap di Pick-up</option>
                         </select>
-                        <?php echo $o->status_rental ?>
                     </td>
                 </tr>
                 <?php endforeach; ?>
