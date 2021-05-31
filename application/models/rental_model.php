@@ -45,8 +45,6 @@ class rental_model extends CI_Model{
             return FALSE;
         }
     }
-
-    
 }
 
 ?>

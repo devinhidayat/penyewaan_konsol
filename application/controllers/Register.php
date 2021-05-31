@@ -37,7 +37,7 @@ class Register extends CI_Controller{
         $this->form_validation->set_rules('alamat','Alamat','required');
         $this->form_validation->set_rules('no_telepon','Nomor Telepon','required');
         $this->form_validation->set_rules('email','Email','required');
-        $this->form_validation->set_rules('password','Password','required');
+        $this->form_validation->set_rules('password','Password', array('required', 'min_length[8]'));
     }
 }
 

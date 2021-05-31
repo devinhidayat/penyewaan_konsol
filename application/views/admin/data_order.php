@@ -36,9 +36,21 @@
                                         echo number_format($o->harga*$diff->d,0,',','.');
                                     ?>
                                 </td>
-                                <td><?php echo $o->status_rental ?></td>
                                 <td>
-                                    <a href="<?php echo base_url('index.php/admin/data_order/update_order/').$o->id_konsol ?>" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
+                                    <?php
+                                    if($o->status_rental=="Sedang Dikirim") {
+                                        echo "<label>$o->status_rental</label>";
+                                    }
+                                    else if($o->status_rental=="Sudah Dikirim") {
+                                        echo "<label style='color: orange;'>$o->status_rental</label>";
+                                    }
+                                    else if($o->status_rental=="Selesai") {
+                                        echo "<label style='color: green;'>$o->status_rental</label>";
+                                    }
+                                    ?>
+                                </td>
+                                <td>
+                                    <a href="<?php echo base_url('index.php/admin/order/update_order/').$o->id_rental ?>" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
                                 </td>
                             </tr>
                     <?php endforeach; ?>

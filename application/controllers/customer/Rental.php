@@ -14,7 +14,10 @@ class Rental extends CI_Controller{
         $id_konsol          = $this->input->post('id_konsol');
         $tanggal_rental     = $this->input->post('tanggal_rental');
         $tanggal_kembali    = $this->input->post('tanggal_kembali');
-        $harga              = $this->input->post('harga');
+        $awal               = new DateTime($tanggal_rental);
+        $akhir              = new DateTime($tanggal_kembali);
+        $diff               = $akhir->diff($awal);
+        $harga              = $this->input->post('harga'*$diff);
         
         $data = array (
             'id_customer'       => $id_customer,

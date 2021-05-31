@@ -29,7 +29,7 @@
                             <td><?php echo $no++ ?></td>
                             <td><?php echo $k->id_konsol ?></td>
                             <td><?php echo $k->nama ?></td>
-                            <td><?php echo $k->deskripsi ?></td>
+                            <td class="mb-2"><?php echo $k->deskripsi ?></td>
                             <td>
                                 <img width="100px" src="<?php echo base_url().'assets/upload/'.$k->gambar ?>">
                             </td>

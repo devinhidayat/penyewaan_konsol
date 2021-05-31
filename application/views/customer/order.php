@@ -27,7 +27,12 @@
                             echo number_format($o->harga*$diff->d,0,',','.');
                         ?>
                     </td>
-                    <td><?php echo $o->status_rental ?></td>
+                    <td>
+                        <select>
+                            <option></option>
+                        </select>
+                        <?php echo $o->status_rental ?>
+                    </td>
                 </tr>
                 <?php endforeach; ?>
             </table>

@@ -39,46 +39,21 @@
     <div class="main-top">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="our-link">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-user s_color"></i> My Account</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12">
                     <div class="text-slid-box">
                         <div id="offer-box" class="carouselTicker">
                             <ul class="offer-box">
                                 <li>
-                                    <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT80
+                                    <i class="fab fa-opencart"></i> All Items Are Available
                                 </li>
                                 <li>
-                                    <i class="fab fa-opencart"></i> 50% - 80% off on Vegetables
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Off 10%! Shop Vegetables
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Off 50%! Shop Now
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Off 10%! Shop Vegetables
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> 50% - 80% off on Vegetables
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> 20% off Entire Purchase Promo code: offT30
-                                </li>
-                                <li>
-                                    <i class="fab fa-opencart"></i> Off 50%! Shop Now 
+                                    <i class="fab fa-opencart"></i> Go Get Yours!
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12">
                     <nav class="navbar navbar-expand-lg navbar-dark">
                         <div class="container our-link">
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -119,28 +94,13 @@
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <h1>RENTAL KONSOL</h1>
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="nav-item active"><a class="nav-link" href="<?php echo base_url('index.php/customer/dashboard') ?>">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url('index.php/customer/dashboard') ?>">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="<?php echo base_url('index.php/customer/order') ?>">Order</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
 
-                <!-- Start Atribute Navigation -->
-                <div class="attr-nav">
-                    <ul>
-                        <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
-                        <li class="side-menu">
-							<a href="#">
-								<i class="fa fa-shopping-bag"></i>
-								<span class="badge">3</span>
-								<p>My Cart</p>
-							</a>
-						</li>
-                    </ul>
-                </div>
-                <!-- End Atribute Navigation -->
+                
             </div>
             
             <!-- Start Side Menu -->
