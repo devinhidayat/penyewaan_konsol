@@ -15,26 +15,26 @@
                                 <label>Konsol</label>
                                 <input type="hidden" name="id_konsol" value="<?php echo $k->id_konsol ?>">
                                 <input type="text" name="nama" class="form-control" value="<?php echo $k->nama ?>">
-                                <?php echo form_error('nama','<div class="text-small text-danger">','</div') ?>
+                                <?php echo form_error('nama','<div class="text-small text-danger">','</div>') ?>
                             </div>
 
                             <div class="form-group">
                                 <label>Deskripsi</label>
                                 <input type="text" name="deskripsi" class="form-control" value="<?php echo $k->deskripsi ?>">
-                                <?php echo form_error('deskripsi','<div class="text-small text-danger">','</div') ?>
+                                <?php echo form_error('deskripsi','<div class="text-small text-danger">','</div>') ?>
                             </div>
 
                             <div class="form-group">
                                 <label>Harga (per hari)</label>
                                 <input type="number" name="harga" class="form-control" value="<?php echo $k->harga ?>">
-                                <?php echo form_error('harga','<div class="text-small text-danger">','</div') ?>
+                                <?php echo form_error('harga','<div class="text-small text-danger">','</div>') ?>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Kuantitas</label>
                                 <input type="number" name="kuantitas" class="form-control" value="<?php echo $k->kuantitas ?>">
-                                <?php echo form_error('kuantitas','<div class="text-small text-danger">','</div') ?>
+                                <?php echo form_error('kuantitas','<div class="text-small text-danger">','</div>') ?>
                             </div>
 
                             <div class="form-group">
