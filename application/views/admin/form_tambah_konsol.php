@@ -12,26 +12,26 @@
                             <div class="form-group">
                                 <label>Konsol</label>
                                 <input type="text" name="nama" class="form-control">
-                                <?php echo form_error('nama','<div class="text-small text-danger">','</div') ?>
+                                <?php echo form_error('nama','<div class="text-small text-danger">','</div>') ?>
                             </div>
 
                             <div class="form-group">
                                 <label>Deskripsi</label>
                                 <input type="text" name="deskripsi" class="form-control">
-                                <?php echo form_error('deskripsi','<div class="text-small text-danger">','</div') ?>
+                                <?php echo form_error('deskripsi','<div class="text-small text-danger">','</div>') ?>
                             </div>
 
                             <div class="form-group">
                                 <label>Harga (per hari)</label>
                                 <input type="number" name="harga" class="form-control">
-                                <?php echo form_error('harga','<div class="text-small text-danger">','</div') ?>
+                                <?php echo form_error('harga','<div class="text-small text-danger">','</div>') ?>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Kuantitas</label>
                                 <input type="number" name="kuantitas" class="form-control">
-                                <?php echo form_error('kuantitas','<div class="text-small text-danger">','</div') ?>
+                                <?php echo form_error('kuantitas','<div class="text-small text-danger">','</div>') ?>
                             </div>
 
                             <div class="form-group">
