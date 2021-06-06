@@ -14,12 +14,12 @@
                                 <label>Tanggal Rental</label>
                                 <input type="hidden" name="id_rental" value="<?php echo $o->id_rental ?>">
                                 <input type="date" name="tanggal_rental" class="form-control" value="<?php echo $o->tanggal_rental ?>" readonly>
-                                <?php echo form_error('tanggal_rental','<div class="text-small text-danger">','</div') ?>
+                                <?php echo form_error('tanggal_rental','<div class="text-small text-danger">','</div>') ?>
                             </div>
                             <div class="form-group">
                                 <label>Tanggal Pengembalian</label>
                                 <input type="date" name="tanggal_kembali" class="form-control" value="<?php echo $o->tanggal_kembali ?>" readonly>
-                                <?php echo form_error('tanggal_kembali','<div class="text-small text-danger">','</div') ?>
+                                <?php echo form_error('tanggal_kembali','<div class="text-small text-danger">','</div>') ?>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -32,7 +32,7 @@
                                         echo $o->harga*$diff->d;
                                     ?>
                                 " readonly>
-                                <?php echo form_error('harga','<div class="text-small text-danger">','</div') ?>
+                                <?php echo form_error('harga','<div class="text-small text-danger">','</div>') ?>
                             </div>
 
                             <div class="form-group">
@@ -42,7 +42,7 @@
                                     <option <?php if($o->status_rental=="Sudah Dikirim"){echo "selected";} ?> value="Sudah Dikirim">Sudah Dikirim</option>
                                     <option <?php if($o->status_rental=="Selesai"){echo "selected";} ?> value="Selesai">Selesai</option>
                                 </select>
-                                <?php echo form_error('status_rental','<div class="text-small text-danger">','</div') ?>
+                                <?php echo form_error('status_rental','<div class="text-small text-danger">','</div>') ?>
                             </div>
                         </div>
                         <div class="ml-3">
